@@ -1,0 +1,26 @@
+.zx-nav.zx-nav-vertical .zx-nav-item:first-child {
+  margin-bottom: 4px;
+}
+
+.zx-nav.zx-nav-vertical .zx-nav-item + .zx-nav-item {
+  margin: 4px 0;
+}
+
+.zx-nav.zx-nav-vertical.zx-nav-item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 29px;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.zx-nav.zx-nav-vertical .zx-nav-link {
+  @include zx-flex(1, 1, 0%);
+
+  line-height: 33px;
+  padding: 0;
+}

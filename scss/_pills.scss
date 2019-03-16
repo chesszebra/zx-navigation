@@ -1,0 +1,12 @@
+.zx-nav-pills {
+
+  &.zx-nav-vertical .zx-nav-item {
+    padding: 0 12px;
+  }
+
+  .zx-nav-item:hover,
+  .zx-nav-active,
+  [aria-current="page"] {
+    background-color: #f9fafb;
+  }
+}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.zx-nav-dots .zx-nav-item,
+.zx-nav-dots > .zx-nav-link {
+  @include zx-display-inline-flex;
+
+  margin-left: 0 !important;
+}
+
+.zx-nav-dots .zx-nav-item::after,
+.zx-nav-dots > .zx-nav-link::after {
+  content: "\2022";
+  cursor: default;
+  opacity: 0.4;
+  vertical-align: middle;
+}
+
+.zx-nav-dots .zx-nav-item:last-child::after,
+.zx-nav-dots > .zx-nav-link:last-child::after {
+  display: none
+}

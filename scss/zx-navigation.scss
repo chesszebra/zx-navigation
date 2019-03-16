@@ -1,0 +1,31 @@
+.zx-nav {
+  @include zx-display-flex;
+  @include zx-flex-wrap(wrap);
+  @include zx-flex-direction(column);
+
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.zx-nav-link {
+  display: block;
+  font-weight: 400;
+  padding: 0 12px;
+  white-space: nowrap;
+}
+
+.zx-nav-link[aria-disabled="true"] {
+  @include zx-user-select(none);
+
+  color: #8b95a5;
+  cursor: not-allowed;
+  opacity: .7;
+  pointer-events: none;
+}
+
+@import "horizontal";
+@import "vertical";
+@import "dots";
+@import "pills";
